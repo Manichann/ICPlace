@@ -14,9 +14,17 @@ namespace IC
 
         private void btnOrder_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
-            Form2 form2 = new Form2();
-            form2.Visible = true;
+            if (txtName.Text == "Manichanh" && txtPass.Text == "282002")
+            {
+                Form2 form2 = new Form2();
+                form2.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("ຊື່ຜູ້ໃຊ້ ຫຼື ລະຫັດຜ່ານບໍ່ຖືກຕ້ອງ, ກະລຸນາລອງໃໝ່ອີກຄັ້ງ", "Log in");
+            }
+            
         }
 
         private void btnClose_Click(object sender, EventArgs e)
