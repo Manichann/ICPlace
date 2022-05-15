@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IC
 {
-    public partial class Form2 : Form
+    public partial class form2 : Form
     {
-        public Form2()
+        public form2()
         {
             InitializeComponent();
         }

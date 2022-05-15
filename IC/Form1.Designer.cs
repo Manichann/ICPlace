@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHome));
             this.btnLogIn = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.btnName = new System.Windows.Forms.Button();
-            this.btnPass = new System.Windows.Forms.Button();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnLogIn
@@ -61,31 +61,6 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // btnName
-            // 
-            this.btnName.BackColor = System.Drawing.Color.SaddleBrown;
-            this.btnName.ForeColor = System.Drawing.Color.Transparent;
-            this.btnName.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnName.Location = new System.Drawing.Point(53, 84);
-            this.btnName.Name = "btnName";
-            this.btnName.Size = new System.Drawing.Size(88, 32);
-            this.btnName.TabIndex = 2;
-            this.btnName.Text = "ຊື່ຜູ້ໃຊ້";
-            this.btnName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnName.UseVisualStyleBackColor = false;
-            // 
-            // btnPass
-            // 
-            this.btnPass.BackColor = System.Drawing.Color.SaddleBrown;
-            this.btnPass.ForeColor = System.Drawing.Color.Transparent;
-            this.btnPass.Location = new System.Drawing.Point(53, 122);
-            this.btnPass.Name = "btnPass";
-            this.btnPass.Size = new System.Drawing.Size(88, 31);
-            this.btnPass.TabIndex = 3;
-            this.btnPass.Text = "ລະຫັດຜ່ານ";
-            this.btnPass.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPass.UseVisualStyleBackColor = false;
-            // 
             // txtName
             // 
             this.txtName.ForeColor = System.Drawing.Color.SaddleBrown;
@@ -102,6 +77,30 @@
             this.txtPass.Size = new System.Drawing.Size(140, 30);
             this.txtPass.TabIndex = 5;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.SaddleBrown;
+            this.label1.Font = new System.Drawing.Font("Saysettha OT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(93, 85);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(48, 24);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "ຊື່ຜູ້ໃຊ້";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.SaddleBrown;
+            this.label2.Font = new System.Drawing.Font("Saysettha OT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(64, 125);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 24);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "ລະຫັດຜ່ານ";
+            // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 21F);
@@ -109,13 +108,14 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(376, 311);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtName);
-            this.Controls.Add(this.btnPass);
-            this.Controls.Add(this.btnName);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnLogIn);
             this.Font = new System.Drawing.Font("Saysettha OT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmHome";
             this.Text = "HOME";
@@ -129,9 +129,9 @@
 
         private Button btnLogIn;
         private Button btnClose;
-        private Button btnName;
-        private Button btnPass;
         private TextBox txtName;
         private TextBox txtPass;
+        private Label label1;
+        private Label label2;
     }
 }
